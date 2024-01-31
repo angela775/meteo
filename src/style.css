@@ -68,5 +68,14 @@ footer {
 }
 .wheat-value {
   font-size: 88px;
+  margin-left: 22px;
   font-weight: bold;
+}
+.wheat-icon {
+  font-size: 44px;
+  margin-top: 22px;
+}
+.wheat-unit {
+  margin-top: 16px;
+  font-size: 28px;
 }
