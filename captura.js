@@ -2,8 +2,15 @@ function refreshW(response) {
   let temperatureElement = document.querySelector("#temperature");
   let temperature = response.data.temperature.current;
   let cityElement = document.querySelector("#city");
+  let descriptionElement = document.querySelector("#description");
+  let humidityElement = document.querySelector("#humidity");
+  let windspeedElement = document.querySelector("#windspeed");
+
   cityElement.innerHTML = response.data.city;
+  descriptionElement.innerHTML = response.data.condition.description;
+  humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   temperatureElement.innerHTML = Math.round(temperature);
+  windspeedElement.innerHTML = `${response.data.wind.speed}km/hr`;
 }
 function searchCity(city) {
   let apiKey = "3t3af9bf15fb2a631460b188a266fbao";
